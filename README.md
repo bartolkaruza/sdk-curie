@@ -191,7 +191,7 @@ perp.clearingHouse.addLiquidity(liquidityDraft, slippage)
 ```ts
 const ratio = new Big(1) // remember to transform to Big type
 const slippage = new Big(0.02) // remember to transform to Big type
-const liquidity = perp.liquidities.getTotalLiquidities().filter(filterFn)
+const liquidity = await perp.liquidities.getTotalLiquidities().filter(filterFn)
 perp.clearingHouse.removeLiquidity(liquidity, ratio, slippage)
 ```
 
